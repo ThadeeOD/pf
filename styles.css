@@ -1,0 +1,22 @@
+/*FONTS*/
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+html, div, header, body, footer, {
+    cursor: url(images/cursor.cur), auto;
+}
+
+body {
+    margin : 0;
+}

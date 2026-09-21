@@ -1,0 +1,172 @@
+﻿CREATE A TOGGLEABLE POP UP
+
+
+<div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div>
+
+
+<style>
+    .popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+/* The actual popup (appears on bottom !!!NEEDS FIXING!!!) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+</style>
+
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+
+
+
+
+
+
+
+CLOSE A POPUP
+
+
+// Source - https://stackoverflow.com/a/60847333 
+// Posted by Justinas 
+// Retrieved 2026-09-18, License - CC BY-SA 4.0 
+ 
+function showModal()
+{
+  $('#modal').show();
+}
+
+
+function hideModal()
+{
+  $('#modal').hide();
+}
+
+
+ 
+
+
+#modal {
+  position: fixed;
+  left: 10%;
+  top: 10%;
+  height: 300px;
+  width: 80%;
+  background-color: white;
+  display: none;
+}
+
+
+.close {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div id="modal">
+  <div class="close" onClick="hideModal()">&times;</div>
+  <iframe name="modal_iframe" src="demo_iframe.htm"></iframe>
+</div>
+
+
+<a href="https://stackoverflow.com" target="modal_iframe" onClick="showModal()">Stack Overflow</a><br/>
+<a href="https://www.w3schools.com" target="modal_iframe" onClick="showModal()">W3</a>
+
+
+
+
+
+
+
+
+
+
+
+
+EMBED A PAGE IN A PAGE
+
+
+IFRAME (Web pages -> style / sounds easier to use)
+
+
+<iframe src="https://en.wikipedia.org/wiki/Main_Page" height="500px" width="1000px">
+</iframe>
+
+
+OR EMBED (files -> no style)
+
+
+<embed src="test.html" type="text/html">
+</embed>

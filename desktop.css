@@ -1,0 +1,22 @@
+body {
+    background-image : url(images/wallpaper.jpg);
+    /*source : https://wallpaperaccess.com/vintage-windows*/
+    background-repeat: no-repeat;
+    background-size: fill;
+}
+
+.desktop {
+    display: flex;
+    flex-wrap: wrap;
+    background-color : red;
+}
+
+.app {
+    margin : 10px;
+
+    background-color: rgb(8, 255, 152);
+    width : 4rem;
+    height : 4rem;
+
+    text-align: center;
+}
