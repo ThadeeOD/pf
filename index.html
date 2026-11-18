@@ -4,42 +4,26 @@
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
     <title>Portfolio Thadée</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
-    <link rel='stylesheet' href='styles.css' />
-    <link rel='stylesheet' href='header.css' />
-    <link rel='stylesheet' href='footer.css' />
-    <link rel='stylesheet' href='desktop.css' />
+    <link rel='stylesheet' href='styles.css' /> <!--STATIC-->
+    <link rel='stylesheet' href='desktop.css' /> <!--APPS-->
+    <link rel='stylesheet' href='tab.css' /> <!--TABS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 
-
-
 <body>
     <!--Background image-->
-    <div class="wallpaper">
-
-    </div>
-
-    <header>
-        <!--Dark mode button-->
-        <div class="headerbutton">
-            D
-        </div>
-        <!--Link to the text version of the site (accessibility)-->
-        <div class="headerbutton">
-            T
-        </div>
-    </header>
+    <div class="wallpaper"></div>
 
     <!--Desktop with apps-->
-    <div class="desktop">
-        <div class="app">
-            APP
+    <div class="desktop" id="desktop">
+        <div class="app1">
+            <button id="opentab1">APP</button>
         </div>
-        <div class="app">
-            APP
+        <div class="app2">
+            <button id="opentab2">APP</button>
         </div>
         <div class="app">
             APP
@@ -55,7 +39,27 @@
         </div>
     </div>
 
+    <div class="tab1" id="tab1">
+        <div class="tabheader" id="tab1header">
+            <button id="closetab1">Close</button>
+            <button id="fullscreentab1">Fullscreen</button>
+            <button id="smallscreentab1">Smallscreen</button>
+        </div>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+    </div>
 
+    <div class="tab2" id="tab2">
+        <div class="tabheader" id="tab2header">
+            <button id="closetab2">Close</button>
+            <button id="fullscreentab2">Fullscreen</button>
+            <button id="smallscreentab2">Smallscreen</button>
+        </div>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+    </div>
+
+    <script src="script/dragtab.js"></script><!--Move tabs-->
+    <script src="script/closetab.js"></script><!--Open and Close tabs-->
+    <script src="script/fullscreen.js"></script><!--Make tabs Fullscreen or Smallscreen-->
 
     <footer>
         <div class="mentions">

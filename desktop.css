@@ -1,22 +1,26 @@
-body {
-    background-image : url(images/wallpaper.jpg);
-    /*source : https://wallpaperaccess.com/vintage-windows*/
-    background-repeat: no-repeat;
-    background-size: fill;
-}
-
 .desktop {
-    display: flex;
-    flex-wrap: wrap;
+    display : flex;
+    flex-wrap : wrap;
     background-color : red;
+    width : 100%;
 }
 
 .app {
     margin : 10px;
 
-    background-color: rgb(8, 255, 152);
+    background-color : aquamarine;
     width : 4rem;
     height : 4rem;
 
-    text-align: center;
+    text-align : center;
+}
+
+.app1, .app2 {
+    margin : 10px;
+
+    background-color : green;
+    width : 4rem;
+    height : 4rem;
+
+    text-align : center;
 }

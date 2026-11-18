@@ -1,22 +1,67 @@
+:root {
+/*COLOURS*/
+    --lgrey : red;
+    --dgrey : blue;
+    --gradient : green;
+
+/*CURSOR*/
+    cursor : url(images/cursor.cur), auto;
+}
+
 /*FONTS*/
 .vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }  
+    font-family : "VT323", monospace;
+    font-weight : 400;
+    font-style : normal;
+}  
 
-  .press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+.press-start-2p-regular {
+    font-family : "Press Start 2P", system-ui;
+    font-weight : 400;
+    font-style : normal;
+}
 
-
-
-html, div, header, body, footer, {
-    cursor: url(images/cursor.cur), auto;
+html {
+    min-width : 100%;
+    min-height : 100%;
 }
 
 body {
     margin : 0;
+    overflow : hidden;
+
+    background-image : url(images/wallpaper.jpg);
+    /*source : https://wallpaperaccess.com/vintage-windows*/
+    background-repeat : no-repeat;
+    background-size : cover;
+    min-width : 100%;
+    min-height : 100%;
+}
+
+footer {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+
+    bottom : 0;
+    position : fixed;
+    z-index : 69;
+
+    background-color : #e9e9e9;
+    width : 100%;
+    height : 2rem;
+}
+
+.footerbutton {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+    margin : 2px;
+
+    background-color : aquamarine;
+    width : 1rem;
+    height : 1rem;
+
+    font-size : 12px;
 }
